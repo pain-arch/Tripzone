@@ -3,8 +3,9 @@ const nextConfig = {
     images: {
         remotePatterns: [
           {
+            hostname: "a0.muscache.com",
             protocol: "https",
-            hostname: "lh3.googleusercontent.com",
+            port: "",
           },
         ],
       },
