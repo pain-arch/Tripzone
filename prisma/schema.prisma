@@ -20,4 +20,22 @@ model User {
   firstname      String
   lastname       String
   profileImage   String?
+  Home           Home[]
+}
+
+model Home {
+  id             String   @id @unique
+
+  title          String?
+  description    String?
+  guests         String?
+  bedrooms       String?
+  bathrooms      String?
+  country        String?
+  photo          String?
+  price          Int?   
+
+  createdAt      DateTime @default(now())
+  User           User?    @relation(fields: [userId], references: [id])
+  userId         String?
 }
