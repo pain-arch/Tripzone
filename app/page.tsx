@@ -1,9 +1,10 @@
-import Image from "next/image";
+import { MapFilterItems } from "./components/MapFilterItems";
+
 
 export default function Home() {
   return (
-    <div>
-      <h1>Home</h1>
+    <div className="container mx-auto px-5 lg:px-10">
+      <MapFilterItems />
     </div>
   );
 }
