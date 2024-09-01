@@ -7,7 +7,7 @@ import { useState } from "react"
 
 export default function SelectCategory() { 
 
-    const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+    const [selectedCategory, setSelectedCategory] = useState<string | undefined>(undefined);
 
     return (
         <div className="grid grid-cols-2 gap-8 mt-10 w-3/5 mx-auto mb-48 lg:grid-cols-4">
